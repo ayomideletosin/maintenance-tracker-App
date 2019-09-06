@@ -1,0 +1,127 @@
+body {
+    margin: 0;
+    padding: 0;
+
+}
+header {
+    background: rgba(88, 3, 3, 0.185);
+    top: 0;
+    left: 5px;
+    border: 2px solid black;
+    width: 100%;
+}
+.header {
+    background: rgba(223, 202, 202, 0.185);
+    width: 100%;
+    margin: 0 auto; 
+    height: 10vh;
+    position: fixed ;
+
+}
+.logo {
+    color: red;
+    float: left;
+    border: 2px solid rgb(197, 36, 197);
+    padding: 6px;
+    margin-left: 50px;
+    margin-top: 8px;
+    font-family: "SF Pro Display";
+}
+.buttonContainer {
+    margin-top: 90px;
+    text-align: center;
+}
+button{
+    margin: 25px;
+    background: white;
+    outline: none;
+    height: 30px;
+    color: red;
+    border: 1px solid rgba(77, 70, 70, 0.185);
+    padding : 8px 16px;
+}
+.active, .btn:hover {
+    border: 1px solid rgb(197, 36, 197);
+}
+table {
+    border-spacing: 0;
+    border-collapse: collapse;
+    text-align: center;
+    width: 90%;
+    padding: 5px 5px;
+    margin-left: 60px;
+}
+#id {
+    width: 0.4fr;
+}
+#laptopInfo, #requestType, #affectedComponent, #details {
+    width: 0.2fr;
+}
+#table thead {
+    border: 1px solid #555;
+}
+#table th {
+    background: rgb(221, 98, 221);
+    color: red;
+    padding: 10px 0;
+    text-align: left;
+
+}
+#table td {
+    padding: 10px 0;
+    color: red;
+    text-align: left;
+    border: 1px solid #555;
+}
+#table tbody tr:nth-child(even) {
+    background: rgba(88, 3, 3, 0.185);
+
+}
+.detailsBtn {
+   color: red;
+    height: 100%;
+    width: 100%;
+   display: inline-block;
+    text-decoration: none;
+    padding: 10px 0;
+}
+.detailsBtn:hover {
+    background: rgb(190, 174, 174);
+    cursor: pointer;
+}
+.requestDetails {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0,0,0,0.8);
+    align-items: center;
+    font-family: "SF Pro Display";
+    display: none;
+}
+.hiddenRequestDetails {
+    
+}
+.content {
+    background: #fff;
+    text-align: center;
+    padding: 15px 15px;
+}
+.requestDetailsBtn {
+    background: rgba(88, 3, 3, 0.185);
+    display: inline;
+}
+
+.requestDetailsBtn:hover {
+    border: 1px solid rgb(197, 36, 197);
+}
+.closeDetails {
+    display: flex;
+    justify-content: flex-end;
+    cursor: pointer;
+
+   
+}

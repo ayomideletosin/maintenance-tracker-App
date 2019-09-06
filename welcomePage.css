@@ -1,0 +1,143 @@
+body {
+    margin: 0;
+    padding: 0;
+
+}
+header {
+    background: rgba(88, 3, 3, 0.185);
+    top: 0;
+    left: 5px;
+    border: 2px solid black;
+    width: 100%;
+}
+.header {
+    background: rgba(223, 202, 202, 0.185);
+    width: 100%;
+    margin: 0 auto; 
+    height: 10vh;
+    position: fixed;
+
+}
+.header::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.logo {
+    color: red;
+    float: left;
+    border: 2px solid rgb(197, 36, 197);
+    padding: 6px;
+    margin-top: 8px;
+    margin-left: 50px;
+    font-family: "SF Pro display";
+}
+nav {
+    float: right;
+   
+}
+a {
+    text-decoration: none;
+    color: red;
+}
+.menu {
+    margin: 0;
+    padding: 2px;
+    list-style: none;
+    float: left;
+    margin-left: 20px;
+    text-decoration: none;
+    color: rgb(59, 2, 59);
+    position: relative;
+}
+
+nav a::before {
+    content: "";
+    display: block;
+    height: 2px;
+    background-color: rgb(197, 36, 197);
+    top: 0;
+    width: 0%;
+    position: absolute;
+    transition: all ease-in-out 0.5s;
+}
+nav a:hover::before {
+    width: 100%;
+}
+.container { 
+    display: grid; 
+    width: 100%;
+    grid-template-columns: 0.8fr 1fr;
+    grid-template-rows: 1fr;
+    margin-top: 120px;
+}
+.welcomeImageDiv {
+    grid-column: 2 / span 1;
+    
+    background-size: 100vw 100vh;
+    background-position: left;
+    margin-left: 150px;
+    width: 40vw;
+    height: 30vh;
+    align-items: center;
+    height: 50vh;
+}
+.welcomeMessageDiv {
+    grid-column: 1 / span 1;
+    margin: 2px;
+    padding: 2px;
+}
+.welcomeMessageDiv h2 {
+    font-family: arial"SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;;
+    text-align: center;
+    color:  red;
+    font-weight: 300;
+    letter-spacing: 2px;
+    font-size: 30px; 
+}
+.welcomeMessageDiv h1 {
+    font-family: arial"SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;;
+    text-align: center;
+    color:  red;
+    font-weight: 300;
+    letter-spacing: 5px;
+    font-size: 30px; 
+}
+h4 {
+    font-family: arial"SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;;
+    text-align: center;
+    color:  red;
+    font-weight: 100;
+    font-size: 20; 
+
+}
+.welcomeMessageDiv p {
+    color: red;
+    margin-top: 50px;
+    font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;;
+}
+.welcomeMessageDiv a {
+    background:   #cc73cc;
+    padding: 6px;
+    border-radius: 10px;
+    margin-top: 150px;
+    justify-self: center;
+    margin-left: 250px;
+}
+.welcomeMessageDiv a:hover {
+    background-color: #4d044d;
+}
+img {
+    width: 40vw;
+    height: 20h;
+}
+footer {
+    text-align: center;
+    height: 5vh;
+    color: #FF162B;
+    padding-top: 30px;
+    width: 100%;
+    bottom: 0;
+    position: absolute;
+    background: rgba(223, 202, 202, 0.185);
+}

@@ -1,0 +1,86 @@
+body {
+    margin: 0;
+    font-family: "SF Pro display";
+}
+header {
+    width: 100%;
+    margin: 0 auto;
+    box-shadow: 5px 5px 5px 1px #FF9BA2; 
+    background: #FFFFFF;
+}
+
+.header {
+    background: rgba(223, 202, 202, 0.185);
+    width: 100%;
+    margin: 0 auto; 
+    height: 10vh;
+    position: fixed;
+
+}
+.logo {
+    color: red;
+    float: left;
+    border: 2px solid rgb(197, 36, 197);
+    padding: 6px;
+    margin-top: 8px;
+    margin-left: 50px;
+    font-family: "SF Pro display";
+}
+header::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.signUpDiv {
+    max-width: 500px;
+    border-radius: 20px;
+    border: 1px solid rgb(197, 36, 197);
+    margin: auto;
+    box-sizing: border-box;
+    padding: 40px;
+    margin-top: 150px;
+    background: white; rgba(223, 202, 202, 0.185);
+}
+h2 {
+    text-align: center;
+    color: red;
+}
+input[type=text],input[type=password] {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px 5px;
+    background: transparent; 
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #cc73cc;
+    border-radius: 5px;
+    margin: 5px;
+    font-weight: bold;
+    color: #cc73cc;
+}
+input[type=submit] {
+    cursor: pointer;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px 0;
+    margin-top: 30px;
+    outline: none;
+    border: none;
+    border-radius: 20px;
+    background:   #cc73cc;
+    justify-self: center;
+    color: red;
+}
+input[type=submit]:hover {
+    background-color: #4d044d;
+}
+footer {
+    text-align: center;
+    background:rgba(223, 202, 202, 0.185);
+    color: #FF162B;
+    padding-top: 30px;
+    clear: both;
+    position: relative;
+    height: 40px;
+    margin-top: -40px;
+}

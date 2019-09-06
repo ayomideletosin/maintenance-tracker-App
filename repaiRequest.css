@@ -1,0 +1,259 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+hr {
+    color: red;
+}
+
+header {
+    width: 100%;
+    background: rgba(223, 202, 202, 0.185);
+    height: 10vh;
+    position: fixed;
+    top: 0;
+    z-index: 3;
+}
+#sideBar {
+    position: fixed;
+    left: -300px;
+    width: 300px;
+    height: 100%;
+    background: rgba(94, 85, 85, 0.185);
+    transition: all 0.6s linear;
+    z-index: 4;
+}
+#sideBar ul a {
+    text-decoration: none;
+}
+#sideBar ul li {
+    color: red;
+    list-style: none;
+    font-family: "SF Pro display";
+    margin: 0px;
+    padding: 20px 15px;
+    border-bottom: 1px solid white;
+}
+.sideBarHeader {
+    height: 60px;
+    background: red; 
+    justify: center;
+    background: rgba(94, 85, 85, 0.185);
+    
+
+}
+.sideBarlogo{
+    letter-spacing: 3px;
+    font-family:  "SF Pro display";
+    color: red;
+    text-align: center;
+    background: rgba(94, 85, 85, 0.185);
+   
+}
+#sideBar .toggleBtn {
+    position: absolute;
+    left: 310px;
+    top: 2px;
+    margin-top: 0px;
+} 
+#sideBar .toggleBtn span {
+    display: block;
+    left: -20%;
+    width: 30px;
+    height: 3px;
+    background: red;
+    margin: 3px 0px;
+}
+
+#sideBar.active {
+    left: 0px;
+}
+p {
+    font-family: "SF Pro display";
+    font-weight: 100;
+    text-align: center;
+    
+}
+.logo {
+    color: red;
+    float: left;
+    border: 2px solid rgb(197, 36, 197);
+    padding: 6px;
+    margin-top: 8px;
+    margin-left: 80px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+h3.requestHeadings {
+    color: rgb(235, 53, 65);
+    font-family: Arial;
+    font-weight: 100;
+    
+}
+.requestFormDiv {
+    justify-items: center;
+    height: 95vh;
+    display: flex;
+    position: relative;
+    background: url(img/whiteLaptop.jpg);
+    background-size: 100vw 100vh;
+    margin-top: 10vh;
+   
+    flex-direction: column;
+    
+}
+.transparentContainer {
+    
+    opacity: 0.9;
+    justify-items: center;
+    align-items: center;
+    width: 100%;
+
+    height: 100%;
+    position: absolute;
+    justify-content: space-around; 
+
+}
+.requestForm {
+    width: 80vh;
+    margin:auto;
+    
+   
+}
+
+.titleSection {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    overflow: hidden;
+    background: none;
+}
+.titleSection input {
+    width: 100%;
+    height: 100%;
+    color:  rgb(175, 32, 175);
+    padding-top: 23px;
+    background: none;
+    outline: none;
+    border: none; 
+}  
+.titleSection .labelTitle {
+    position: absolute;
+    bottom: 0px;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    border-bottom: 1px solid  black;
+}
+.titleSection .labelTitle::after {
+    content: "";
+    width: 100%;
+    height: 100%; 
+    left: 0px;
+    position: absolute;
+    bottom: -1px;
+    border-bottom: 2px solid  purple;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+}
+.titleSection input:focus  + .labelTitle .contentName, .titleSection input:valid + .labelTitle .contentName{
+    transform: translateY(-100%);
+    font-size: 14px;
+    color: purple;
+}
+.titleSection input:focus  + .labelTitle::after, 
+.titleSection input:valid + .labelTitle::after {
+    transform: translateX(0%);
+}
+
+.contentName {
+    position: absolute;
+    bottom: 5px;
+    left: 0px;
+    transition: all 0.3s ease;
+    font-family: Arial;
+    font-weight: 100;
+}
+select {
+    margin-left: 0px;
+    background: none;
+}
+textarea {
+    background: none;
+}
+
+input[type=submit] {
+    color: white;
+    background: red;
+    padding: 10px;
+    border-radius: 10px;
+}
+input[type=submit]:hover {
+    background-color: rgb(59, 2, 59);
+    opacity: 0.5;
+}
+.heading {
+    color: rgb(235, 53, 65);
+    text-align: center;
+    letter-spacing: 2px;
+    margin-top: 50px;
+    font-weight: 400px;
+    font-size: 40px;
+    font-family: Arial;
+    
+}
+p {
+    font-weight: 200px;
+    color: rgb(214, 18, 18);
+    font-size: 22px;
+    margin-top: 30px;
+}
+.testimonies {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    margin-top: 30px;
+}
+.imageTestimony1 {
+    border: 2px solid purple;
+    grid-column: 1 / span 1;
+    background: url(img/Dele.JPG);
+    background-position: top;
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+}
+.testimonyText1 {
+    grid-column: 2 / span 1;
+    margin-right: 100px;
+}
+
+.imageTestimony2 {
+    border: 2px solid purple;
+    grid-column: 3 / span 1;
+    background: url(img/Dele.JPG);
+    background-position: top;
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+}
+.testimonyText2 {
+    grid-column: 4 / span 1;
+    margin-right: 15px;
+}
+.testimonyText{
+    font-family:  Arial;
+    font-weight: 100;
+    font-size: 18px;
+}
+footer {
+    text-align: center;
+    left: 0;
+    bottom: 0;
+    background: rgba(223, 202, 202, 0.185);
+    color: #FF162B;
+    height: 10vh;
+    width: 100%;
+}

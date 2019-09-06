@@ -1,0 +1,208 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body {
+    margin: 0px;
+    background: rgb(224, 194, 194);
+    font-family: 'Arial';
+    
+}
+h2.logo {
+    color: red;
+    display: inline;
+    margin-left: 50px;
+}
+header {
+    width: 100%;
+    margin: 0 auto;
+    box-shadow: 5px 5px 5px 1px #FF9BA2; 
+    background: rgb(224, 194, 194);
+}
+#sideBar {
+    position: fixed;
+    left: -300px;
+    width: 300px;
+    height: 100%;
+    background: rgb(224, 194, 194);
+    transition: all 0.6s linear;
+    z-index: 4;
+}
+#sideBar ul a {
+    text-decoration: none;
+}
+#sideBar ul li {
+    color: red;
+    list-style: none;
+    font-family: sans-serif;
+    margin: 0px;
+    padding: 20px 15px;
+    border-bottom: 1px solid white;
+}
+.sideBarHeader {
+    height: 60px;
+    background: red; 
+    justify: center;
+    background: rgb(224, 194, 194);
+    
+
+}
+.sideBarlogo{
+    letter-spacing: 3px;
+    font-family:  'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: red;
+    text-align: center;
+    background: rgb(224, 194, 194);
+   
+}
+#sideBar .toggleBtn {
+    position: absolute;
+    left: 310px;
+    top: 2px;
+    margin-top: 0px;
+} 
+#sideBar .toggleBtn span {
+    display: block;
+    left: -20%;
+    width: 30px;
+    height: 3px;
+    background: red;
+    margin: 3px 0px;
+}
+#sideBar.active {
+    left: 0px;
+    z-index: 4;
+}
+.allRequests {
+   margin: 10px;
+    border: 2px solid; 
+    background-image: linear-gradient(rgba(79, 14, 82, 0.6),rgba(0,0,0,0.6)) ,url(../img/realLaptopImage.jpg);
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+    background-position: center center;
+    width: 100%;
+    align-items: right;
+    text-align: right; 
+}
+.allrequest{
+    margin-left: 585px;
+    letter-spacing: 2px;
+    
+}
+h1 .allrequest {
+    text-align: right;
+}
+.newRequests  {
+    margin: 10px;
+    border: 2px solid;
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    
+    background-image: url(img/lapDoc.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-size: cover;
+    background-position: center center;
+    
+}
+.onGoingRepairs {
+    margin: 10px;
+    border: 2px solid;
+    background-image: url(img/laptoprepair1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+}
+.onGoingMaintenance {
+    margin: 10px;
+    border: 2px solid;
+    background-image: url(img/laptop\ pins.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+
+}
+.disputes {
+    margin: 10px;
+    border: 2px solid;
+    background-image: url(img/hpspecta.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+
+}
+.requestCategories {
+    text-align: center;
+    height: 70vh;
+    width: 100%;
+    align-items: center;
+    text-align: justify;
+   
+    position: relative;
+    width: 100%;
+}
+.requestCategories > * {
+    position: relative;
+    z-index: 2;
+}
+.requestCategories:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0; 
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.4);
+}
+.requestCategories h2 {
+    color: rgb(224, 194, 194);
+    letter-spacing: 5px;
+    font-weight: 700;
+    text-align: center;
+    justify: center;
+    margin-top: 80px;
+    font-family: 'arial';
+    font-style: normal;
+    font-size: 48px;
+
+}
+.requestCategories a {
+    text-decoration: none;
+    text-align: center;
+    border: 1px solid red;
+    text-transform: uppercase;
+    margin-top: 20px;
+    letter-spacing: 5px;
+    justify: center;
+    color: rgb(224, 194, 194);
+}
+.headings {
+    color: rgb(224, 194, 194);
+    letter-spacing: 5px;
+    font-weight: 700;
+    text-align: center;
+    justify: center;
+    margin-top: 50px;
+}
+footer {
+    text-align: center;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    background: rgb(224, 194, 194);
+    color: #FF162B;
+    z-index: 3;
+    height: 10vh;
+    width: 100%;
+}
+p {
+    letter-spacing: 5px;
+    font-weight: 300;
+    justify: center;
+    margin-top: 25px;
+}
