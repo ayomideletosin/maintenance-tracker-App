@@ -1,0 +1,101 @@
+<html>
+    <head> 
+            <title> Maintainer Admin page </title>
+            <meta  name="viewport" content="width=device-width", initial-scale=1.0>
+            <link rel="stylesheet" href="userRequests.css" type="text/css">
+    </head>
+
+    <body> 
+        <header> 
+                <header> 
+                        <div class="header"> 
+                                <h2 class="logo"> Maintainer </h2>
+                        </div> 
+                    </header>
+        </header>
+
+    <div class="buttonContainer" >
+        <button  class="btn active"> All requests</button>
+        <button  class="btn "> Repair requests </button>
+        <button  class="btn "> Maintenance requests</button>
+        <button  class="btn"> New requests</button>
+        <button  class="btn"> Active requests</button>
+        <button  class="btn"> Completed requests</button>
+    </div>
+    <div class="requestsTable"> 
+        <table id="table">
+            <thead>
+                <tr>
+                    <th id="id"> ID </th>
+                    <th id="requestType"> Request Type </th>
+                    <th id="laptopInfo"> Laptop Information </th>
+                    <th id="affecttedComponent"> Affected component </th>
+                    <th id="details"> Full details </th>
+                </tr>
+            </thead>
+            <tbody> 
+                <tr>
+                    <td> 123456</td>
+                    <td> Repair </td>
+                    <td> MacBook Pro </td>
+                    <td> Hardware </td>
+                    <td class="detailsBtn"> Details </td>
+                </tr>
+                <tr>
+                    <td> 123456</td>
+                    <td> Repair </td>
+                    <td> MacBook Pro </td>
+                    <td> Hardware </td>
+                    <td class="detailsBtn"> Details </td>
+                </tr>
+                <tr>
+                    <td> 123456</td>
+                    <td> Maintainance </td>
+                    <td> Lenovo </td>
+                    <td> Hardware </td>
+                    <td class="detailsBtn"> Details </td>
+                </tr>
+                <tr>
+                    <td> 123456</td>
+                    <td> Repair </td>
+                    <td> Lenovo </td>
+                    <td> Hardware </td>
+                    <td class="detailsBtn">  Details    </td>
+                </tr>
+                <tr>
+                    <td> 123456</td>
+                    <td> Repair </td>
+                    <td> Huawei </td>
+                    <td> Hardware </td>
+                    <td class="detailsBtn"> Details </td>
+                </tr>
+                <tr>
+                    <td> 123456</td>
+                    <td> Maintainance </td>
+                    <td> Hp </td>
+                    <td> Softwareware </td>
+                    <td class="detailsBtn"> Details </td>
+                </tr>
+            </tbody>
+
+        </table>
+
+    </div>
+    <div class="requestDetails"> 
+        <div class="content">
+            <div class="closeDetails"> <span> x </span> </div>
+                <h3 class="requestTitle"> The screen of my laptop is broken  </h3>
+                <p class="requestDescription"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae animi saepe neque, ducimus hic dolorum debitis eveniet necessitatibus id similique enim quis obcaecati veniam quibusdam exercitationem tempora ut ipsum tenetur! It appears the screen of my laptop might be damaged as i find it difficult to view the content on the screen properly</p>
+               <div class="btnContainer">
+                    <button class="requestDetailsBtn"> Accepted </button>
+                <button class="requestDetailsBtn"> In progress </button>
+                <button class="requestDetailsBtn"> Completed </button>
+                    </div>
+        
+        </div>
+        
+       
+    </div>
+    <script type="text/javascript" src="adminPage.js"></script>
+    </body>
+</html>
